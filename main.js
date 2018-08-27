@@ -3,23 +3,26 @@ $(document).ready( function() {
 
   //---VARIABLES---//
 
-  var userClick = ''
-  var userScore = 0
-  var compScore = 0
-  var level = 1
-  var lives = 9
-  var wins = 0
-  var losses = 0
-  var playing = false
+  var userClick = '';
+  var userScore = 0;
+  var level = 1;
+  var lives = 9;
+  var wins = 0;
+  var playing = false;
+  var buttons = document.querySelectorAll("#box");
+
+  var scoreDisplay = document.getElementById("#score-display");
 
 
   //--FUNCTIONS--//
 
-  function scoreBoard () {
-    scoreDisplay.innerHTML = "Score: " + score + "<span id='level-display'> Level: " + level + "</span><span id='lifes-display'> Lives: " + lives + "</span>";
+  function gopherUp() {
+   
+  }
+
+  function scoreBoard() {
+    scoreDisplay.innerHTML = "Your Score: " + userScore + "<span id='Wins'> Level: " + level + "</span><span id='lives'> Lives: " + lives + "</span>";
 }
-
-
 
   //--EVENT LISTENERS--//
   
@@ -28,9 +31,11 @@ $(document).ready( function() {
    });
 
    $(".wrapper").click(function() { //ALERT WHEN BOX MISSED -- MISS!
-     alert ("MISS!" );
+     alert ("MISS!");
    });
   
+   $(".directions").text("Whack the Mole with your cursor!").fadeIn(3000);
+
   
   //---FUNCTIONS---//
   //function user_click ()
@@ -43,4 +48,4 @@ $(document).ready( function() {
  // losses ++
  // $('#Losses').text(compScore + losses)
   //}
-});
+  });

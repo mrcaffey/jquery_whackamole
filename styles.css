@@ -1,45 +1,78 @@
+
+
 body {
   margin: 70px;
   padding: 100px;
   font: "text/StarLight.ttf";
+  border: 1px solid red;
 }
 
 #box {
-  background-color: #444;
+  background-color: black;
+  background-image: url("https://lh3.googleusercontent.com/dhu2l8PRv0qA3PcV91eo3yExcjfWfHwOCQ18pMg42b9I9F_VMK_P8oL8oKK2Tef2cRE=s128");
   color: #fff;
   border-radius: 30px;
   padding: 20px;
   font-size: 150%;
+  -webkit-animation: myAnimation 5s linear infinite;
+  
 }
+
 
 .box:nth-child(even) {
   background-color: #ccc;
-  color: #000;
+  color: black;
 }
 
 
 .wrapper {
-  width: 870px;
+  width: 1100px;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(6, 100px);
-  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: repeat(10, 100px);
+  grid-template-rows: 100px 100px 100px 100px;
   grid-auto-flow: column;
   background: red;
 }
 
+
 #title {
-font: "text/Starlight.ttf"
+display: block;
+width: 100%;
+height: 30%;
+margin: auto;
+border: 1px solid black;
+
 }
 
 .scoreboard {
-height: 330px;
-width: 330px;
-margin: 0 auto;
+display: block;
+width: 30%;
+margin: auto;
 border: 1px solid black;
+
+}
+
+#score-display {
+display: block;
+width: 100%;
+border: 1px solid black;
+}
+
+.score {
+  display: block;
+  width: 100%;
+  border: 1 px solid red;
 }
 
 .start {
   color: green;
   border: 1px solid black;
+  display: block;
+  width: 20%;
+}
+
+.directions {
+font-size: 1.5em;
+animation: ease-in;
 }
